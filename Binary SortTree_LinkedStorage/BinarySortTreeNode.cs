@@ -1,19 +1,20 @@
 ﻿using System;
 namespace Binary_SortTree_LinkedStorage
 {
-	public class BinarySortTreeNode
+	public class BSNode
 	{
-		public BinarySortTreeNode leftchild { get; set; }
-        public BinarySortTreeNode rightchild { get; set; }
-        public BinarySortTreeNode parent { get; set; }
-        public int data { get; private set; }
-        public BinarySortTreeNode()
+        public BSNode Leftchild { get; set; }
+        public BSNode Rightchild { get; set; } 
+        public BSNode Parent { get; set; } 
+        public int Data { get;  set; }
+        public BSNode()
         {
+            
 
         }
-        public BinarySortTreeNode(int item)
+        public BSNode(int item)
         {
-            this.data = item;
+            this.Data = item;
         }
     }
 }
