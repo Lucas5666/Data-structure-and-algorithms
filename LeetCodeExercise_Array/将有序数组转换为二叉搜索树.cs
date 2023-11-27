@@ -32,7 +32,7 @@ namespace LeetCodeExercise_Array
             int mid = l + (h - l) / 2;
             TreeNode root = new TreeNode(nums[mid]);
 
-            root.left = dfs(nums, l, mid);
+            root.left = dfs(nums, l, mid - 1);
             root.right = dfs(nums, mid + 1, h);
 
             return root;
