@@ -5,9 +5,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        string s = "hello";
 
-        List<int> l1 = new List<int>();
+        Console.WriteLine(反转字符串中的元音字母.ReverseVowels(s));
 
         Console.ReadKey();
     }
